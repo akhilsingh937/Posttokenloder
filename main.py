@@ -57,7 +57,6 @@ def post_comments():
         'referer': 'www.google.com'
     }
 
-        sys.exit()
 
     liness()
 
