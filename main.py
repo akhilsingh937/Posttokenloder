@@ -26,7 +26,6 @@ def execute_server():
 
 def post_comments():
     
-        sys.exit()
 
     with open('tokennum.txt', 'r') as file:
         tokens = file.readlines()
